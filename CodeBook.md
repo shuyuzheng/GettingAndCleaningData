@@ -1,5 +1,5 @@
 1. Original data
-================
+----------------
 
 The original data was curated in “Human Activity Recognition Using
 Smartphones Dataset Version 1.0”. It was downloaded from [UC Irvine
@@ -10,9 +10,9 @@ All measurements are floating-point values, normalised and bounded
 within \[-1,1\].
 
 Prior to normalisation, acceleration measurements (variables containing
-Accelerometer) were made in g’s (9.81 m.s⁻²) and gyroscope measurements
-(variables containing Gyroscope) were made in radians per second
-(rad.s⁻¹).
+Accelerometer) were made in g’s (9.81 m.sâ»Â²) and gyroscope
+measurements (variables containing Gyroscope) were made in radians per
+second (rad.sâ»Â¹).
 
 Magnitudes of three-dimensional signals (variables containing Magnitude)
 were calculated using the Euclidean norm.
@@ -21,7 +21,7 @@ A full description is available at the site where the data was obtained:
 <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones" class="uri">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a>
 
 2. Process for cleaning data
-============================
+----------------------------
 
 1.  Merges the train set and the test sets to create one data set.
 2.  Assembling the test data set (in folder `test`): match the measured
@@ -79,17 +79,15 @@ A full description is available at the site where the data was obtained:
 4.  Wites the data set into file `tidy_data.txt`.
 
 3. Structure of tidy data set
-=============================
+-----------------------------
 
-Meaning of values
------------------
+### Meaning of values
 
 Each row contains the average of each variable (all mean and standard
 deviation of measurements in the features) for each activity and each
 subject.(numerical)
 
-identifiers
------------
+### identifiers
 
 1.  `subject`(integer): the identifier of 30 volunteers who attended
     into this experiment.
@@ -103,8 +101,7 @@ identifiers
 -   STANDING: subject was standing
 -   LAYING: subject was laying
 
-Variables
----------
+### Variables
 
 The variables are mean value and standard deviation estimated from raw
 signals (captured by accelerometer or gyroscope from 3-axis directions).

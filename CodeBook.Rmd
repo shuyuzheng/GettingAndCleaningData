@@ -7,7 +7,7 @@ output:
     variant: markdown_github
 ---
 
-# 1. Original data
+## 1. Original data
 The original data was curated in "Human Activity Recognition Using Smartphones Dataset Version 1.0". It was downloaded from [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/ml/index.php) and saved in the folder `UCI HAR Dataset`.
 
 All measurements are floating-point values, normalised and bounded within [-1,1].
@@ -18,7 +18,7 @@ Magnitudes of three-dimensional signals (variables containing Magnitude) were ca
 
 A full description is available at the site where the data was obtained: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-# 2. Process for cleaning data
+## 2. Process for cleaning data
 
 1. Merges the train set and the test sets to create one data set.
   1. Assembling the test data set (in folder `test`): match the measured value (in `X_test.txt`),  with the label in (`y_test.txt`) and the subject (in `subject_test.txt`)
@@ -55,12 +55,12 @@ A full description is available at the site where the data was obtained: http://
   2. Calculates the mean of all other columns.
   3. Wites the data set into file `tidy_data.txt`.
 
-# 3. Structure of tidy data set
+## 3. Structure of tidy data set
 
-## Meaning of values
+### Meaning of values
 Each row contains the average of each variable (all mean and standard deviation of measurements in the features) for each activity and each subject.(numerical)
 
-## identifiers
+### identifiers
 1. `subject`(integer): the identifier of 30 volunteers who attended into this experiment.
 2. `activity`(character): the activities the volunteers were doing when data was collected. There are totally 6 different activities:
   * WALKING: subject was walking
@@ -70,7 +70,7 @@ Each row contains the average of each variable (all mean and standard deviation 
   * STANDING: subject was standing
   * LAYING: subject was laying
 
-## Variables
+### Variables
 The variables are mean value and standard deviation estimated from raw signals (captured by accelerometer or gyroscope from 3-axis directions).
 
 The constructure of variable names is `<domain><sensor><signal><metric><direction>`
