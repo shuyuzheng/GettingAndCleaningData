@@ -1,5 +1,5 @@
-1. Original data
-----------------
+Original data
+-------------
 
 The original data was curated in “Human Activity Recognition Using
 Smartphones Dataset Version 1.0”. It was downloaded from [UC Irvine
@@ -10,9 +10,9 @@ All measurements are floating-point values, normalised and bounded
 within \[-1,1\].
 
 Prior to normalisation, acceleration measurements (variables containing
-Accelerometer) were made in g’s (9.81 m.sâ»Â²) and gyroscope
-measurements (variables containing Gyroscope) were made in radians per
-second (rad.sâ»Â¹).
+Accelerometer) were made in g’s (9.81 m.s⁻²) and gyroscope measurements
+(variables containing Gyroscope) were made in radians per second
+(rad.s⁻¹).
 
 Magnitudes of three-dimensional signals (variables containing Magnitude)
 were calculated using the Euclidean norm.
@@ -20,8 +20,8 @@ were calculated using the Euclidean norm.
 A full description is available at the site where the data was obtained:
 <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones" class="uri">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a>
 
-2. Process for cleaning data
-----------------------------
+Process for cleaning data
+-------------------------
 
 1.  Merges the train set and the test sets to create one data set.
 2.  Assembling the test data set (in folder `test`): match the measured
@@ -78,8 +78,8 @@ A full description is available at the site where the data was obtained:
 3.  Calculates the mean of all other columns.
 4.  Wites the data set into file `tidy_data.txt`.
 
-3. Structure of tidy data set
------------------------------
+Structure of tidy data set
+--------------------------
 
 ### Meaning of values
 
